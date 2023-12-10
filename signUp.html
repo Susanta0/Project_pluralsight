@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Pluralsight</title>
+    <link rel="icon" type="image/x-icon" href="./pluralsight-color-full-logo.png" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .signup-container{
+           height: 100%;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            align-items: center;
+            background-color: #0D0F12;
+           
+        }
+        .signup-container>div:first-child{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            
+        }
+        img{
+            width: 17rem;
+            margin: 0px 0px 0px 30px;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            color: #fff;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+        }
+        input{
+            width: 350px;
+            height: 40px;
+            background-color: transparent;
+            outline: none;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            color: #fff;
+            font-size: 16px;
+        }
+        input::-webkit-outer-spin-button,
+         input::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+      }
+        #submit{
+            width: 350px;
+            padding: 12px;
+            font-size: 17px;
+            background-color: #0074AB;
+            color: #fff;
+            margin: 30px 0px;
+            cursor: pointer;
+            border: none;
+        }
+        .p1, .p2{
+            text-align: center;
+            margin: 10px auto;
+            font-size: 17px;
+            color: #0c6188;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .signLink{
+            text-align: center;
+            margin: 30px auto;
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        hr{
+            border: 1px solid #313335;
+        }
+        #nd2{
+            width: 100%;
+            height: 735px;
+            background: url(https://cdnb.artstation.com/p/assets/images/images/023/097/575/medium/paul-ferrin-abstract-wire-render.jpg?1578073058);
+            display: flex;
+            text-align: center;
+        }
+        .ani{
+            height: 100%;
+            width: 891px;
+        }
+        #background-text{
+            margin: auto;
+        }
+        .future{
+            font-size: 55px;
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 100;
+        }
+        .trial{
+            background-color: transparent;
+            border: 1px solid #fff;
+            width: fit-content;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div  class="signup-container">
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/ps-nav-assets/product-logo/pluralsight-color-full-logo.png" alt="">
+            <br><br>
+            <form id="form">
+                <label>Email or Username</label>
+                <input id="email" type="text"><br><br>
+                <label>Mobile</label>
+                <input id="number" type="number"><br><br>
+                <label>Password</label>
+                <input id="password" type="password">
+                <input id="submit" type="submit">
+            </form>
+            <p class="p1">Forgot password?</p>
+            <p class="p2">Sign in with company or school</p>
+            <hr>
+            <p class="signLink">Already have an account? <span><a href="./signIn.html">Sign in</a></span></p>
+
+        </div>
+        <div id="nd2">
+            <div id="background-text">
+                <p class="future">Let's create the future <b>together.</b></p>
+                <button class="trial">Start a FREE 10-day trial</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="./signup.js"></script>
+</html>
